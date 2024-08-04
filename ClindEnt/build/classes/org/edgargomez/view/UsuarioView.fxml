@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edgargomez.controller.UsuarioController">
+   <children>
+      <ImageView fitHeight="345.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="123.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/AgregarUsuario.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNuevo" layoutX="56.0" layoutY="163.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="43.0" prefWidth="113.0" styleClass="button1" stylesheets="@../resource/ClindEntCSS.css" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="56.0" layoutY="221.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="36.0" prefWidth="113.0" styleClass="button1" stylesheets="@../resource/ClindEntCSS.css" text="Eliminar" />
+      <GridPane layoutX="268.0" layoutY="45.0" prefHeight="235.0" prefWidth="288.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Codigo Usuario" textFill="#180ec2">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Nombre Usuario" textFill="#180ec2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Apellido Usuario" textFill="#180ec2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Usuario" textFill="#180ec2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Contraseña" textFill="#180ec2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoUsuario" style="-fx-border-color: #FF0000; -fx-border-image-width: 0px 0px 2px 0px; -fx-background-color: transparente;" GridPane.columnIndex="1" />
+            <TextField fx:id="txtPassword" style="-fx-border-color: #FF0000; -fx-border-image-width: 0px 0px 2px 0px; -fx-background-color: transparente;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtUsuario" style="-fx-border-color: #FF0000; -fx-border-image-width: 0px 0px 2px 0px; -fx-background-color: transparente;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtApellidoUsuario" style="-fx-border-color: #FF0000; -fx-border-image-width: 0px 0px 2px 0px; -fx-background-color: transparente;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtNombreUsuario" style="-fx-border-color: #FF0000; -fx-border-image-width: 0px 0px 2px 0px; -fx-background-color: transparente;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="imgNuevo" fitHeight="43.0" fitWidth="46.0" layoutX="14.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Nuevoxd.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgEliminar" fitHeight="36.0" fitWidth="37.0" layoutX="15.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Eliminar2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

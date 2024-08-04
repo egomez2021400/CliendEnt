@@ -1,0 +1,83 @@
+                /*MENÚ CONFIGURE*/
+                
+.menu-bar {
+    -fx-background-color: #15C6E9; /*Agregar el color celeste*/
+    -fx-opacity: 0.5;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar .label {
+    -fx-font-size: 16.0 pt;
+    -fx-font-family: "Bauhaus 93"; /*Tipo de Letra*/
+    -fx-text-fill: #FFFFFF; /*Color de letras blancas*/
+    -fx-font-weight: #f8181b; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: #85888A; /*Agregar color gris*/
+    -fx-opacity: 0.5;
+    -fx-text-fill: #f8181b;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: #f8181b;
+    -fx-background: #85888A; /*Agregar el color gris*/
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: #FFFFFF; /*Color de letras blancas*/
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: #0DA8E7; /*Agregar color celeste*/
+    -fx-text-fill: #FFFFFF; /*Color de letras blancas*/
+}
+.context-menu {
+
+    -fx-background-color: #15C6E9; /*Agregar color celeste*/
+    -fx-border-width: 0.2px;
+    -fx-border-color: #15C6E9; /*Agregar color celeste*/
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}
+
+                /*BOTONES CONFIGURE*/
+
+.button1{
+    -fx-background-color: #1173cc
+}
+
+.button1:hover{
+  -fx-background-color: #063b8c; 
+}
+
+.button1:pressed{
+    -fx-background-color: #1c9cfb;
+}
+
+.button2{
+  -fx-background-color:  #2788EA;
+  -fx-border-color: #EFF70B;
+  -fx-border-width: 2;
+  -fx-text-fill: #ffcc00;
+  -fx-font-family: "Comic Sans MS";
+  -fx-font-style: italic;
+  -fx-font-size: 22px;
+  -fx-background-radius: 10 10 10 10;
+  -fx-border-radius: 10 10 10 10;
+}
+
+.button:hover{
+    -fx-background-color: #0DE1F3;
+    -fx-font-size: 20px;
+}
+
+.button:pressed{
+    -fx-background-color: #0087FF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;        
+    }

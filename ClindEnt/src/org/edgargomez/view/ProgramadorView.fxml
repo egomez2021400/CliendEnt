@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edgargomez.controller.ProgramadorController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="426.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Coromna.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="154.0" layoutY="142.0" prefHeight="205.0" prefWidth="385.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="#134ed7" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre: " wrappingWidth="396.13671875" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#134ed7" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido: " wrappingWidth="396.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#134ed7" strokeType="OUTSIDE" strokeWidth="0.0" text="Código:" wrappingWidth="396.13671875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#134ed7" strokeType="OUTSIDE" strokeWidth="0.0" text="Carnet: " wrappingWidth="396.13671875" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edgar Edwin Alexander" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gómez García " GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2021400" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IN5CV" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Broadway" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="378.0" fitWidth="376.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="111.0" layoutX="57.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FotoMiaXD.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="134.0" layoutX="45.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Letras.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/DienteEnfermo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0dc2da" layoutX="13.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDENTIFICACIÓN PROGRAMADOR" wrappingWidth="283.0">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#dd0808" layoutX="302.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En ClindEnt somos responsables de tu sonrisa.">
+         <font>
+            <Font name="Bauhaus 93" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="62.0" fitWidth="77.0" layoutY="313.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ClindEnt.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../recource/ClindEntCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edgargomez.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="397.0" fitWidth="434.0" layoutX="102.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ClindEnt.png" />
+         </image></ImageView>
+      <MenuBar prefHeight="50.0" prefWidth="258.0" styleClass="menu-item" stylesheets="@../resource/ClindEntCSS.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPacientes" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicamentos" text="Medicamento" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaDoctores" text="Doctores" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaReceta" text="Receta" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaDetalleReceta" text="Detalle receta" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCitas" text="Citas" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reporte">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

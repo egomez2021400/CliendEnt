@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c70e4eca-ec97-49fa-b5ba-adde1c66a190">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from pacientes]]>
+	</queryString>
+	<field name="codigoPaciente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombresPaciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidosPacientes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaNacimiento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccionPaciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoPersonal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaPrimeraVisita" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802" splitType="Stretch">
+			<image scaleImage="Clip">
+				<reportElement x="0" y="0" width="555" height="802" uuid="17bfe193-3ced-40b4-b361-4a184b500a5a"/>
+				<imageExpression><![CDATA["C:\\Users\\edson\\Documents\\Proyecto fish\\ClindEntIN5CV2_2021400\\src\\org\\edgargomez\\image\\Fondo reporte1.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="73" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="22" width="100" height="20" forecolor="#FFFFFF" uuid="7c32d7a1-edaa-496a-aa31-2e056ce85dc9"/>
+				<text><![CDATA[Codigo Paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="22" width="125" height="20" forecolor="#F0F0F0" uuid="68de7ab2-e44b-446d-a3b5-20a16e63f7da"/>
+				<text><![CDATA[Nombre de los Pacientes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="22" width="109" height="20" forecolor="#F0F0F0" uuid="7be7c300-7686-4215-9ff5-03b871d9a418"/>
+				<text><![CDATA[Fecha de Nacimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="22" width="100" height="20" forecolor="#F0F0F0" uuid="2ee88a6d-9b96-4545-9fdc-01e77467bf2a"/>
+				<text><![CDATA[Fecha Primera Visita]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="42" width="555" height="1" forecolor="#FFFFFF" uuid="24953c1c-8f39-4a2c-924d-43d5d61f673f"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51" splitType="Stretch">
+			<textField>
+				<reportElement x="12" y="14" width="100" height="20" forecolor="#F0F0F0" uuid="794e10b3-de39-437c-86d1-73dc8dafe7a3"/>
+				<textFieldExpression><![CDATA[$F{codigoPaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="14" width="115" height="20" forecolor="#F0F0F0" uuid="cd2b33bd-8934-4077-9b8f-a360f51e3970"/>
+				<textFieldExpression><![CDATA[$F{nombresPaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="14" width="100" height="20" forecolor="#F0F0F0" uuid="9d2ed6ca-ba7f-4f89-a75a-131df3b18061"/>
+				<textFieldExpression><![CDATA[$F{fechaNacimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="393" y="14" width="112" height="20" forecolor="#F0F0F0" uuid="52634ee5-9687-4117-a7d8-b8e7513dc44d"/>
+				<textFieldExpression><![CDATA[$F{fechaPrimeraVisita}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
